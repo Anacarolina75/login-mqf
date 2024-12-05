@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Tradução Libras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mãos que falam</h1>
+
+    <div id="login">
+      <input type="email" id="email" placeholder="Digite seu email">
+      <input type="password" id="password" placeholder="Digite sua senha">
+      <button id="loginButton">Entrar</button>
+      <button id="registerButton">Registrar</button>
+      <p id="error"></p>
+    </div>
+
+    <!-- Tela de Bem-vindo -->
+    <div id="welcome" style="display: none;">
+      <h2>Bem-vindo ao Sistema Mãos que falam!</h2>
+      <button id="logoutButton">Sair</button>
+    </div>
+
+    <!-- Tela de Registro -->
+    <div id="register" style="display: none;">
+      <h1>Criar Conta</h1>
+      <input type="text" id="name" placeholder="Digite seu nome">
+      <input type="email" id="registerEmail" placeholder="Digite seu email">
+      <input type="password" id="registerPassword" placeholder="Digite sua senha">
+      <p id="passwordRules">A senha deve ter no mínimo 6 caracteres.</p>
+      <button id="registerSubmitButton">Registrar</button>
+      <button id="backToLoginButton">Voltar para Login</button>
+      <p id="registerError"></p>
+    </div>
+  </div>
+
+  <!-- Scripts do Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+
+  <!-- Arquivo JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
